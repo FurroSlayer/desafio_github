@@ -1,0 +1,135 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* cambios: ajuste de clases, BEM, colores y padding varios */
+
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background-color: #FFFFFF;
+}
+
+.freature-card__section {
+  min-height: 50vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #4C4E61;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4C4E61;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4C4E61;
+  
+}
+
+.heading_holder p {
+  font-size: 0.9375rem;
+  color: lightslategray;
+  font-weight: 200;
+}
+
+.card__text {
+  font-size: 0.8125rem;
+  font-weight: 200;
+  color: lightslategray;
+  display: block;
+  padding: 15px 0px;
+}
+
+.heading__holder {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card__box {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: -3px 15px 12px 4px rgba(163,165,174,0.2);
+	-moz-box-shadow: -3px 15px 12px 4px rgba(163,165,174,0.2);
+	box-shadow: -3px 15px 12px 4px rgba(163,165,174,0.2);
+  border-top: 10px;
+  border-style: solid;
+  padding: 20px;
+  width: 100%;
+  height: 25vh;
+  min-height: 220px;
+  margin: 40px 0px;
+}
+
+.card__blue {
+  border-top-color: rgb(0, 119, 255);
+}
+
+.card__red {
+  border-top-color: rgb(255, 60, 0);
+}
+
+.card__orange {
+  border-top-color: orange;
+}
+
+.card__yellow {
+  border-top-color: rgb(208, 255, 0);
+}
+
+.card__box img {
+  float: right;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1024px){
+	h1, h2 {
+		font-size: 2.3rem;
+	}
+
+	.card__box {
+		margin: 20px 0px;
+    border-style: inherit;
+    border-top-style: solid;
+	}
+
+	.cards__holder {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.card-left__holder {
+		display: flex;
+		align-items: center;
+		flex: 0 1 33%;
+		margin: 0px 20px;
+	}
+
+  .card-right_holder {
+		display: flex;
+		align-items: center;
+		flex: 0 1 33%;
+		margin: 0px 20px;
+	}
+
+	.cards-middle__holder {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 0 1 33%;
+		margin: 0px 20px;
+	}
+}
